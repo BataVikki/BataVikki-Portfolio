@@ -1,309 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bata Vikki — Software Engineer</title>
-<meta name="description" content="Bata Vikki — Software Engineer building Java/Spring Boot microservices, REST APIs, and Angular UIs.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./portfolio.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Bata Vikki, Java full-stack software engineer.">
+  <title>Bata Vikki | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-
-<div class="bg-grid" aria-hidden="true"></div>
-
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a href="#top" class="brand">bata<span class="brand-dot">.</span>vikki</a>
-    <nav class="topnav" aria-label="Primary">
-      <a href="#about"><span class="nav-tag">GET</span> /about</a>
-      <a href="#experience"><span class="nav-tag">GET</span> /experience</a>
-      <a href="#projects"><span class="nav-tag">GET</span> /projects</a>
-      <a href="#skills"><span class="nav-tag">GET</span> /skills</a>
-      <a href="#contact" class="nav-cta"><span class="nav-tag nav-tag-post">POST</span> /contact</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-      <span></span><span></span><span></span>
+  <nav class="navbar" aria-label="Primary navigation">
+    <a class="logo" href="#home" aria-label="Bata Vikki home">
+      <span class="logo-mark">BV</span>
+      <span>Bata Vikki</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-  </div>
-  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
-    <a href="#about">/about</a>
-    <a href="#experience">/experience</a>
-    <a href="#projects">/projects</a>
-    <a href="#skills">/skills</a>
-    <a href="#contact">/contact</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-</header>
 
-<main id="main">
-
-  <!-- HERO -->
-  <section id="top" class="hero wrap">
-    <div class="hero-text">
-      <p class="eyebrow">// Bengaluru, IN — open to work</p>
-      <h1>Bata Vikki</h1>
-      <p class="hero-role">Software Engineer — Java &amp; Spring Boot, REST APIs, Angular</p>
-      <p class="hero-sub">I build backend services that hold up under load and front ends that don't make people wait for them. One year in production at Fidelity Investments, shipping microservices, event pipelines, and the tests that keep them honest.</p>
-      <div class="hero-cta-row">
-        <a href="#contact" class="btn btn-primary">Get in touch</a>
-        <a href="./BataVikki_Resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+  <main>
+    <section class="home-section page-section" id="home">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="home-shell">
+        <div class="home-copy">
+          <p class="eyebrow">Java Full-Stack Developer</p>
+          <h1>Hi, I am <span>Bata Vikki</span></h1>
+          <h2>Software Engineer</h2>
+          <p>
+            I build scalable Java and Spring Boot microservices, RESTful APIs, Angular interfaces,
+            and automated test coverage for reliable product delivery.
+          </p>
+          <div class="home-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button ghost" href="mailto:batavikki2002@gmail.com">Hire Me</a>
+          </div>
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:batavikki2002@gmail.com" aria-label="Email">EM</a>
+            <a href="tel:+919505226856" aria-label="Phone">PH</a>
+            <a href="https://linkedin.com/in/bata-vikki" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="profile-orbit" aria-hidden="true">
+          <div class="avatar-ring">
+             <span><img src="BataVikki.jpg" alt="B" class="profile-image"></span>
+          </div>
+          <div class="tech-chip chip-one">Spring Boot</div>
+          <div class="tech-chip chip-two">Angular</div>
+          <div class="tech-chip chip-three">Kafka</div>
+        </div>
       </div>
-      <div class="hero-meta">
-        <a href="https://github.com/BataVikki" target="_blank" rel="noopener">github.com/BataVikki</a>
-        <span class="dot-sep">·</span>
-        <a href="https://www.linkedin.com/in/bata-vikki-022bb924a" target="_blank" rel="noopener">linkedin.com/in/bata-vikki</a>
-      </div>
-    </div>
+    </section>
 
-    <div class="hero-panel" aria-hidden="true">
-      <div class="panel-titlebar">
-        <span class="panel-dot dot-red"></span><span class="panel-dot dot-amber"></span><span class="panel-dot dot-green"></span>
-        <span class="panel-title">GET /engineer/bata-vikki</span>
+    <section class="about-section page-section" id="about">
+      <div class="section-heading">
+        <span>About Me</span>
+        <h2>Clean code, strong testing, and practical full-stack delivery.</h2>
       </div>
-      <pre class="panel-body"><code><span class="tok-status">200 OK</span>
-<span class="tok-brace">{</span>
-  <span class="tok-key">"role"</span>: <span class="tok-str">"Software Engineer"</span>,
-  <span class="tok-key">"company"</span>: <span class="tok-str">"Fidelity Investments"</span>,
-  <span class="tok-key">"stack"</span>: <span class="tok-bracket">[</span>
-    <span class="tok-str">"Java"</span>, <span class="tok-str">"Spring Boot"</span>,
-    <span class="tok-str">"Angular"</span>, <span class="tok-str">"Kafka"</span>,
-    <span class="tok-str">"AWS"</span>, <span class="tok-str">"Oracle"</span>
-  <span class="tok-bracket">]</span>,
-  <span class="tok-key">"experience_years"</span>: <span class="tok-num">1</span>,
-  <span class="tok-key">"availability"</span>: <span class="tok-str">"open"</span><span class="tok-cursor">▌</span>
-<span class="tok-brace">}</span></code></pre>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section wrap">
-    <p class="route-label"><span class="tok-tag-get">GET</span> /about <span class="route-status">200</span></p>
-    <h2 class="section-title">Professional summary</h2>
-    <p class="about-copy">Software Engineer with one year of professional experience at Fidelity Investments, building scalable Java/Spring Boot microservices, RESTful APIs, and Angular UIs. Comfortable across the stack — from optimizing Oracle queries to shipping automated test suites with Cypress, JUnit 5, and Cucumber, to keeping releases moving through Jenkins CI/CD. Background in Agile/Scrum delivery, Apache Kafka messaging, and AWS deployments. I care about clean, testable code, and about the difference it makes six months later when someone else has to read it.</p>
-
-    <div class="about-stats">
-      <div class="stat">
-        <span class="stat-num">1</span>
-        <span class="stat-label">year in production<br>at Fidelity Investments</span>
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Professional Summary</h3>
+          <p>
+            Software Engineer with 1 year of professional experience at Fidelity Investments building Java/Spring Boot
+            microservices, REST APIs, Angular UIs, Oracle DB integrations, Jenkins pipelines, and automation suites.
+          </p>
+        </article>
+        <div class="about-stats">
+          <article>
+            <strong>1+</strong>
+            <span>Year professional experience</span>
+          </article>
+          <article>
+            <strong>12+</strong>
+            <span>Core engineering tools</span>
+          </article>
+          <article>
+            <strong>Full</strong>
+            <span>Stack delivery mindset</span>
+          </article>
+        </div>
       </div>
-      <div class="stat">
-        <span class="stat-num">2</span>
-        <span class="stat-label">full-stack apps shipped<br>end-to-end, solo</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">B.Tech</span>
-        <span class="stat-label">Electronics &amp; Communication<br>Engineering, 2023</span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section wrap">
-    <p class="route-label"><span class="tok-tag-get">GET</span> /experience <span class="route-status">200</span></p>
-    <h2 class="section-title">Where I've worked</h2>
+    <section class="education-section page-section" id="education">
+      <div class="education-shell">
+        <h2>Education</h2>
+        <div class="education-timeline">
+          <article class="timeline-item">
+            <div class="timeline-card">
+              <h3>B.Tech</h3>
+              <p>Electronics and Communication Engineering</p>
+              <strong>Siddartha Institute of Science and Technology</strong>
+              <span>2019 - 2023</span>
+            </div>
+            <div class="timeline-dot">OK</div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-card">
+              <h3>Certification</h3>
+              <p>Java Full Stack Developer</p>
+              <strong>Pentagon Space, Bangalore</strong>
+              <span>2023</span>
+            </div>
+            <div class="timeline-dot">OK</div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-card">
+              <h3>Coursework</h3>
+              <p>Spring Framework, Spring Boot, JUnit, Mockito</p>
+              <strong>Udemy</strong>
+              <span>2026</span>
+            </div>
+            <div class="timeline-dot">OK</div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <div class="exp-card">
-      <div class="exp-head">
+    <section class="experience-section page-section" id="experience">
+      <div class="section-heading light">
+        <span>Experience</span>
+        <h2>Building production features with Java, Angular, and CI/CD.</h2>
+      </div>
+      <div class="experience-card">
+        <div class="experience-date">Sept 2024 - Sept 2025</div>
         <div>
-          <h3 class="exp-role">Software Engineer</h3>
-          <p class="exp-company">Fidelity Investments</p>
+          <h3>Software Engineer</h3>
+          <p class="company">Fidelity Investments</p>
+          <ul>
+            <li>Developed scalable microservices using Java, Spring Boot, and Oracle DB.</li>
+            <li>Designed RESTful APIs for efficient UI-to-backend communication.</li>
+            <li>Built Angular interfaces with HTML, CSS, and JavaScript.</li>
+            <li>Created unit, integration, API, and UI automation tests with JUnit 5, Karma, Jasmine, Cypress, and Insomnia.</li>
+            <li>Integrated quality checks into Jenkins CI/CD pipelines and supported SonarQube gates.</li>
+          </ul>
         </div>
-        <span class="exp-dates">Sept 2024 — Sept 2025</span>
       </div>
-      <ul class="exp-list">
-        <li>Developed and maintained scalable microservices using Java, Spring Boot, and Oracle DB, improving backend performance and system availability.</li>
-        <li>Designed RESTful APIs enabling seamless UI-to-backend communication, reducing latency and improving data processing efficiency.</li>
-        <li>Built dynamic UIs with Angular, HTML, CSS, and JavaScript, enhancing responsiveness across web applications.</li>
-        <li>Optimized SQL queries and integrated Oracle DB via JDBC, improving data retrieval throughput.</li>
-        <li>Wrote unit and integration tests with JUnit 5, Karma, and Jasmine; built API automation tests with Insomnia; integrated suites into Jenkins CI/CD pipelines.</li>
-        <li>Enforced code quality via SonarQube; maintained Git version control through code reviews and branching strategies.</li>
-        <li>Collaborated in Agile/Scrum ceremonies — sprint planning, retrospectives, and daily stand-ups — for timely, high-quality delivery.</li>
-      </ul>
-    </div>
+    </section>
 
-    <div class="exp-card">
-      <div class="exp-head">
+    <section class="services-section page-section" id="services">
+      <div class="services-intro">
+        <span>Services</span>
+        <h2>What I can help you build</h2>
+        <p>End-to-end software delivery from backend services to responsive UI, test automation, and release pipelines.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+            <div class="service-icon">UI</div>
+          <h3>Web Application Development</h3>
+          <p>Responsive Angular interfaces backed by clean API contracts and maintainable frontend structure.</p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon">API</div>
+          <h3>API and Microservices</h3>
+          <p>Scalable Java Spring Boot services, REST APIs, data access layers, and service-to-service workflows.</p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon">AWS</div>
+          <h3>Cloud and DevOps</h3>
+          <p>Jenkins CI/CD pipelines, Git workflows, SonarQube checks, and AWS deployment fundamentals.</p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon">QA</div>
+          <h3>Automation Testing</h3>
+          <p>JUnit, Mockito, Cypress, Cucumber, Karma, Jasmine, and API automation for release confidence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section page-section" id="skills">
+      <div class="skills-background" aria-hidden="true"></div>
+      <div class="section-heading">
+        <span>Technical Toolkit</span>
+        <h2>Skills and Expertise</h2>
+        <p>Modern full-stack development with Java, Spring Boot, Angular, testing, DevOps, messaging, and cloud fundamentals.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="card-heading"><div class="icon-box">L</div><h3>Languages</h3></div>
+          <div class="skill-list">
+            <div class="skill-row"><div class="skill-meta"><span>Java</span><strong>90%</strong></div><div class="skill-track"><span style="width:90%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>SQL</span><strong>84%</strong></div><div class="skill-track"><span style="width:84%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>JavaScript</span><strong>78%</strong></div><div class="skill-track"><span style="width:78%"></span></div></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="card-heading"><div class="icon-box">B</div><h3>Backend</h3></div>
+          <div class="skill-list">
+            <div class="skill-row"><div class="skill-meta"><span>Spring Boot</span><strong>88%</strong></div><div class="skill-track"><span style="width:88%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>Hibernate</span><strong>82%</strong></div><div class="skill-track"><span style="width:82%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>REST APIs</span><strong>90%</strong></div><div class="skill-track"><span style="width:90%"></span></div></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="card-heading"><div class="icon-box">F</div><h3>Frontend</h3></div>
+          <div class="skill-list">
+            <div class="skill-row"><div class="skill-meta"><span>Angular</span><strong>86%</strong></div><div class="skill-track"><span style="width:86%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>HTML</span><strong>90%</strong></div><div class="skill-track"><span style="width:90%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>CSS</span><strong>84%</strong></div><div class="skill-track"><span style="width:84%"></span></div></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="card-heading"><div class="icon-box">T</div><h3>Testing</h3></div>
+          <div class="skill-list">
+            <div class="skill-row"><div class="skill-meta"><span>JUnit 5</span><strong>82%</strong></div><div class="skill-track"><span style="width:82%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>Mockito</span><strong>80%</strong></div><div class="skill-track"><span style="width:80%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>Cypress</span><strong>76%</strong></div><div class="skill-track"><span style="width:76%"></span></div></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="card-heading"><div class="icon-box">D</div><h3>DevOps</h3></div>
+          <div class="skill-list">
+            <div class="skill-row"><div class="skill-meta"><span>Git</span><strong>88%</strong></div><div class="skill-track"><span style="width:88%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>Jenkins</span><strong>78%</strong></div><div class="skill-track"><span style="width:78%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>SonarQube</span><strong>76%</strong></div><div class="skill-track"><span style="width:76%"></span></div></div>
+          </div>
+        </article>
+        <article class="skill-card">
+          <div class="card-heading"><div class="icon-box">C</div><h3>Architecture and Cloud</h3></div>
+          <div class="skill-list">
+            <div class="skill-row"><div class="skill-meta"><span>Microservices</span><strong>84%</strong></div><div class="skill-track"><span style="width:84%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>Kafka</span><strong>78%</strong></div><div class="skill-track"><span style="width:78%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><span>AWS</span><strong>72%</strong></div><div class="skill-track"><span style="width:72%"></span></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-section page-section" id="projects">
+      <div class="section-heading light">
+        <span>Projects</span>
+        <h2>Featured Work</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-badge">Microservices</div>
+          <h3>Mutual Funds and Trade Recommendation Application</h3>
+          <p>
+            Real-time mutual fund analysis and personalized investment recommendation platform using Java,
+            Spring Boot 3, Apache Kafka, REST APIs, AWS, and MySQL.
+          </p>
+          <ul>
+            <li>Implemented Kafka-driven asynchronous inter-service communication.</li>
+            <li>Built REST APIs for analysis workflows and recommendation delivery.</li>
+            <li>Created Cypress and Cucumber BDD automation for critical journeys.</li>
+            <li>Used JUnit 5, Mockito, and SonarQube to reduce regression risk.</li>
+          </ul>
+          <div class="project-actions">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Kafka</span>
+            <span>AWS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section page-section" id="contact">
+      <div class="contact-shell">
         <div>
-          <h3 class="exp-role">Java Full Stack Developer — Intern</h3>
-          <p class="exp-company">Pentagon Space, Bangalore</p>
+          <span>Contact</span>
+          <h2>Let us build something reliable.</h2>
+          <p>I am based in Bangalore, India and open to Java full-stack engineering opportunities.</p>
         </div>
-        <span class="exp-dates">2023</span>
+        <div class="contact-card">
+          <a href="mailto:batavikki2002@gmail.com">batavikki2002@gmail.com</a>
+          <a href="tel:+919505226856">+91 95052 26856</a>
+          <a href="https://linkedin.com/in/bata-vikki" target="_blank" rel="noreferrer">linkedin.com/in/bata-vikki</a>
+          <p>Bangalore, India</p>
+        </div>
       </div>
-      <ul class="exp-list">
-        <li>Completed an intensive Java Full Stack Developer certification program covering core Java, Spring, and front-end fundamentals.</li>
-        <li>Built foundational full-stack projects to apply REST API design, relational database, and UI development concepts.</li>
-      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>(c) 2026 Bata Vikki. All rights reserved.</p>
+      <a href="mailto:batavikki2002@gmail.com">batavikki2002@gmail.com</a>
     </div>
-  </section>
+  </footer>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section wrap">
-    <p class="route-label"><span class="tok-tag-get">GET</span> /projects <span class="route-status">200</span></p>
-    <h2 class="section-title">Things I've built</h2>
-
-    <div class="project-grid">
-      <article class="project-card">
-        <p class="project-kicker">POST /trade-recommendations</p>
-        <h3 class="project-title">Mutual Funds &amp; Trade Recommendation Application</h3>
-        <p class="project-desc">Microservices-based platform for real-time mutual fund analysis and personalized investment recommendations, built around an event-driven architecture for trade signal processing.</p>
-        <ul class="project-points">
-          <li>Built Java &amp; Spring Boot 3 microservices exposing RESTful APIs for fund analysis and recommendations.</li>
-          <li>Integrated Apache Kafka for async, event-driven inter-service communication at scale.</li>
-          <li>Wrote end-to-end Cypress + Cucumber (BDD) suites covering critical user journeys.</li>
-          <li>Covered logic with JUnit 5 + Mockito; enforced coverage thresholds via SonarQube.</li>
-        </ul>
-        <div class="project-tags">
-          <span>Java</span><span>Spring Boot 3</span><span>Kafka</span><span>AWS</span><span>MySQL</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="project-kicker">GET /tasks</p>
-        <h3 class="project-title">TaskFlow</h3>
-        <p class="project-desc">A full-stack task manager for organizing, tracking, and completing day-to-day work, built solo from the database up.</p>
-        <ul class="project-points">
-          <li>Built a REST API backend with Node.js and Express.js for task CRUD and status workflows.</li>
-          <li>Built the UI in React 18 with a component structure for boards, filters, and task detail views.</li>
-          <li>Persisted data in MySQL with a schema designed for users, tasks, and task states.</li>
-        </ul>
-        <div class="project-tags">
-          <span>Node.js</span><span>Express</span><span>React 18</span><span>MySQL</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="project-kicker">POST /auth/login</p>
-        <h3 class="project-title">Pets-Hub</h3>
-        <p class="project-desc">An e-commerce application for pet products, with a focus on a working authentication flow built from first principles.</p>
-        <ul class="project-points">
-          <li>Implemented user authentication and session handling using JSP and Servlets.</li>
-          <li>Built product browsing and listing pages backed by a relational database.</li>
-        </ul>
-        <div class="project-tags">
-          <span>Java</span><span>JSP</span><span>Servlets</span><span>SQL</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section wrap">
-    <p class="route-label"><span class="tok-tag-get">GET</span> /skills <span class="route-status">200</span></p>
-    <h2 class="section-title">Stack</h2>
-
-    <div class="skills-grid">
-      <div class="skill-row">
-        <span class="skill-key">Languages</span>
-        <span class="skill-val">Java, HTML, CSS, JavaScript</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-key">Frameworks</span>
-        <span class="skill-val">Spring Boot, Spring MVC, Spring Data JPA, Hibernate, Angular</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-key">Database</span>
-        <span class="skill-val">Oracle, MySQL, SQL, PL/SQL</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-key">Testing</span>
-        <span class="skill-val">JUnit 5, Mockito, Cucumber (BDD), Cypress, Karma, Jasmine, Rest Assured, TestNG</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-key">CI/CD &amp; Cloud</span>
-        <span class="skill-val">Jenkins, Git, AWS (EC2, RDS, S3, Lambda)</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-key">Messaging</span>
-        <span class="skill-val">Apache Kafka, Microservices, RESTful APIs</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-key">Quality &amp; Tools</span>
-        <span class="skill-val">SonarQube, Postman, Insomnia, IntelliJ IDEA, Jira</span>
-      </div>
-      <div class="skill-row">
-        <span class="skill-key">Practices</span>
-        <span class="skill-val">Agile/Scrum, TDD, BDD, Code Reviews</span>
-      </div>
-    </div>
-
-    <div class="edu-block">
-      <p class="route-label small"><span class="tok-tag-get">GET</span> /education <span class="route-status">200</span></p>
-      <div class="edu-row">
-        <div>
-          <h3 class="edu-degree">B.Tech, Electronics &amp; Communication Engineering</h3>
-          <p class="edu-school">Siddartha Institute of Science and Technology</p>
-        </div>
-        <span class="edu-dates">2019 — 2023</span>
-      </div>
-      <div class="edu-row">
-        <div>
-          <h3 class="edu-degree">Java Full Stack Developer Certification</h3>
-          <p class="edu-school">Pentagon Space, Bangalore</p>
-        </div>
-        <span class="edu-dates">2023</span>
-      </div>
-      <div class="edu-row">
-        <div>
-          <h3 class="edu-degree">Java Spring Framework, Spring Boot, JUnit &amp; Mockito</h3>
-          <p class="edu-school">Udemy</p>
-        </div>
-        <span class="edu-dates">2026</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section wrap contact-section">
-    <p class="route-label"><span class="tok-tag-post">POST</span> /contact <span class="route-status">201</span></p>
-    <h2 class="section-title">Let's talk</h2>
-    <p class="contact-sub">Open to Software Engineer, Full Stack, and Backend roles in Bengaluru and remote. Reach out directly or send a message below.</p>
-
-    <div class="contact-grid">
-      <div class="contact-direct">
-        <a class="contact-line" href="mailto:batavikki2002@gmail.com">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">batavikki2002@gmail.com</span>
-        </a>
-        <a class="contact-line" href="tel:+919505226856">
-          <span class="contact-label">Phone</span>
-          <span class="contact-value">+91 95052 26856</span>
-        </a>
-        <a class="contact-line" href="https://www.linkedin.com/in/bata-vikki-022bb924a" target="_blank" rel="noopener">
-          <span class="contact-label">LinkedIn</span>
-          <span class="contact-value">/in/bata-vikki</span>
-        </a>
-        <a class="contact-line" href="https://github.com/BataVikki" target="_blank" rel="noopener">
-          <span class="contact-label">GitHub</span>
-          <span class="contact-value">/BataVikki</span>
-        </a>
-      </div>
-
-      <form class="contact-form" id="contactForm" autocomplete="off">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
-
-        <button type="submit" class="btn btn-primary form-submit">Send message</button>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer wrap">
-  <p>© <span id="year"></span> Bata Vikki. Built with HTML, CSS &amp; honest commit history.</p>
-</footer>
-
-<script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
